@@ -1,0 +1,30 @@
+/* Hero.css */
+
+.hero {
+  height: 80vh;
+
+  background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  position: relative;
+}
+
+.movie-card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+
+  transition: transform 0.3s;
+}
+
+.movie-card img:hover {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+
+  text-align: center;
+  opacity: 0;
+
+  transition: 0.3s;
+}
+
+.movie-card:hover .overlay {
+  opacity: 1;
+}
